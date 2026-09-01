@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <title>Survey Form</title>
 <link rel="stylesheet" href="styles.css">
@@ -34,18 +35,18 @@
 
 <fieldset>
     <label>Would you recommend freeCodeCamp to a friend?</label>
-    <label><input type="radio" name="first" value="definitely">Definitely</label>
-    <label><input type="radio" value="maybe" name="first">Maybe</label>
-    <label><input type="radio" value="sure" name="second">Not sure</label>
-    <label><input type="radio" value="def_not" name="second">Definitely not</label>
+    <label><input class='inline' type="radio" name="first" value="definitely">Definitely</label>
+    <label><input class='inline' type="radio" value="maybe" name="first">Maybe</label>
+    <label><input class='inline' type="radio" value="sure" name="second">Not sure</label>
+    <label><input class='inline' type="radio" value="def_not" name="second">Definitely not</label>
 
 </fieldset>
 
 <fieldset>
     <label>What would you like to see improved (Check all that apply)</label>
-    <label><input type="checkbox" value="front"> Front-end Projects</label>
-    <label><input type="checkbox" value="back"> Back-end Projects</label>
-    <label><input type="checkbox" value="data"> Data Visualization</label>
+    <label><input class='inline' type="checkbox" value="front"> Front-end Projects</label>
+    <label><input class='inline' type="checkbox" value="back"> Back-end Projects</label>
+    <label><input class='inline' type="checkbox" value="data"> Data Visualization</label>
 </fieldset>
 
 <fieldset>
@@ -54,8 +55,9 @@
 
 </textarea>
 </fieldset>
-
-<input value='submit' id="submit" type="submit">
+<div class="submitting">
+<input value='Submit' id="submit" type="submit">
+</div>
 </form>
 </div>
 </body>
